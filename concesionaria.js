@@ -37,26 +37,11 @@ let concesionaria = {
             return true
         }
         return false
+    },
+
+    autosQuePuedeComprar: function(persona){
+         return this.autosParaLaVenta().filter (element => this.puedeComprar (element,persona) == true)
     }
-
-/*     autosQuePuedeComprar: function(persona){
-        let output = []
-        //this.listaDeVentas().forEach (element => output.push(this.puedeComprar (element,persona)))
-        /*output.push (this.listaDeVentas().forEach (element => {
-            if (this.puedeComprar (element,persona) == true) {
-                output.push (element)
-            }
-        }))
-        let aVender = this.listaDeVentas()
-        aVender.forEach(element {
-            if (this.puedeComprar (element,persona) == true) {
-
-            }
-        })
-        
-        
-        return output 
-    } */
 
 }
 //console.log(concesionaria.autos)
